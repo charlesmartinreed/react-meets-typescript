@@ -1,7 +1,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import Header from "./Header";
 
 ReactDOM.render(
-  <h1>Hello again, from JSX!</h1>,
+  <div>
+    <Header msg="Dumb message" />
+    <p>Test paragraph!</p>
+    <a href="#">Test link!</a>
+  </div>,
   document.querySelector("#root")
 );
