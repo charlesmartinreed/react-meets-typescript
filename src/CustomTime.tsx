@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 
-function CustomTime() {
+const CustomTime = () => {
   const [currentTime, setCurrentTime] = useState("");
 
   const getDate = () => {
@@ -14,6 +14,8 @@ function CustomTime() {
       <button onClick={getDate}>Get the Time!</button>
     </div>
   );
-}
+};
+
+CustomTime.displayName = "CustomDate";
 
 export default CustomTime;

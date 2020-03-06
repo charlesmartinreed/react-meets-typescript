@@ -5,7 +5,7 @@ type FruitLoopsProps = {
   fruits: { name: string; color: string }[];
 };
 
-function FruitLoops(props: FruitLoopsProps) {
+const FruitLoops = (props: FruitLoopsProps) => {
   return (
     <ul>
       {Object.values(props.fruits).map(({ name, color }, idx) => {
@@ -17,6 +17,7 @@ function FruitLoops(props: FruitLoopsProps) {
       })}
     </ul>
   );
-}
+};
 
+FruitLoops.displayName = "FLoops";
 export { FruitLoops };
